@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f0f4ff;
+  color: #1d1d1d;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: #111827;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #60a5fa;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.warning {
+  border-left: 8px solid #ef4444;
+}
+
+/* BOTÕES */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* FORM */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  padding: 15px;
+}
+
+/* DARK MODE */
+.dark {
+  background: #0b0f19;
+  color: white;
+}
+
+.dark .card {
+  background: #1e293b;
+}
+
+.dark .menu {
+  background: #000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
