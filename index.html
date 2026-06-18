@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidadania Digital e IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>🧠 Cidadania Digital & Inteligência Artificial</h1>
+  <p>Deepfakes, Fake News e o poder da informação na era digital</p>
+
+  <button id="themeBtn">🌙 Alternar Modo</button>
+</header>
+
+<nav class="menu">
+  <a href="#deepfakes">Deepfakes</a>
+  <a href="#perigos">Perigos</a>
+  <a href="#comoidentificar">Como Identificar</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#form">Participar</a>
+</nav>
+
+<main>
+
+<section id="deepfakes" class="card">
+  <h2>📌 O que são Deepfakes?</h2>
+  <p>
+    Deepfakes são conteúdos criados por Inteligência Artificial capazes de simular rostos,
+    vozes e movimentos humanos com alto nível de realismo.
+  </p>
+  <p>
+    Eles podem ser usados tanto para entretenimento quanto para manipulação e golpes digitais.
+  </p>
+</section>
+
+<section id="perigos" class="card warning">
+  <h2>⚠️ Perigos da Desinformação</h2>
+  <ul>
+    <li>Manipulação política e social</li>
+    <li>Fake news viralizadas em redes sociais</li>
+    <li>Golpes financeiros com vídeos falsos</li>
+    <li>Perda de confiança na informação</li>
+  </ul>
+</section>
+
+<section id="comoidentificar" class="card">
+  <h2>🔍 Como identificar um Deepfake?</h2>
+  <ul>
+    <li>Movimentos faciais artificiais ou travados</li>
+    <li>Inconsistência de iluminação</li>
+    <li>Áudio fora de sincronia</li>
+    <li>Fonte sem credibilidade</li>
+  </ul>
+</section>
+
+<section id="quiz" class="card quiz">
+  <h2>🧪 Quiz de Conscientização</h2>
+
+  <p>Uma notícia sem fonte confiável deve ser compartilhada?</p>
+
+  <button onclick="quiz(true)">Sim</button>
+  <button onclick="quiz(false)">Não</button>
+
+  <p id="quizResult"></p>
+</section>
+
+<section id="form" class="card">
+  <h2>📝 Formulário de Consciência Digital</h2>
+
+  <form id="formulario">
+    <label>Seu nome:</label>
+    <input type="text" id="nome" required>
+
+    <label>Você já acreditou em fake news?</label>
+    <select id="fake">
+      <option value="sim">Sim</option>
+      <option value="nao">Não</option>
+    </select>
+
+    <label>Você verifica fontes antes de compartilhar?</label>
+    <select id="verifica">
+      <option value="sempre">Sempre</option>
+      <option value="asvezes">Às vezes</option>
+      <option value="nunca">Nunca</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="msg"></p>
+</section>
+
+</main>
+
+<footer>
+  <p>#cidadaniadigital2026 • Proteja a informação, proteja a sociedade</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
